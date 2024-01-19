@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MemberCardView" customModule="shoppingApp" customModuleProvider="target">
+            <connections>
+                <outlet property="amountProgress" destination="JpR-1a-j78" id="d8i-C3-DKA"/>
+                <outlet property="backgroundView" destination="FfF-z6-iWM" id="Kx3-My-u1t"/>
+                <outlet property="memberName" destination="DCW-Zd-UZl" id="cvK-BZ-ijZ"/>
+                <outlet property="memberPhoto" destination="B7n-Uv-mJp" id="pzb-tW-7lv"/>
+                <outlet property="memberQRcord" destination="9IX-Qe-aGm" id="F3I-Ji-Sjw"/>
+                <outlet property="memberStatus" destination="S79-WU-xPZ" id="Urb-k7-XM8"/>
+                <outlet property="promotionInfo" destination="Vc9-zz-o2H" id="FBr-KE-6cc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="FfF-z6-iWM">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="215"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="catPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="B7n-Uv-mJp" userLabel="頭像">
+                    <rect key="frame" x="20" y="20" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Beq-1m-BMO"/>
+                        <constraint firstAttribute="width" constant="50" id="UCq-7X-JUT"/>
+                    </constraints>
+                </imageView>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="barcode" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9IX-Qe-aGm" userLabel="會員條碼">
+                    <rect key="frame" x="384" y="22.666666666666664" width="50" height="19.666666666666664"/>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="2kw-nY-KEc"/>
+                        <constraint firstAttribute="width" constant="50" id="k05-C9-GUn"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="吧拉吧拉蹦" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCW-Zd-UZl" userLabel="會員名稱">
+                    <rect key="frame" x="85" y="20" width="284" height="24"/>
+                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="銅卡會員" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S79-WU-xPZ" userLabel="會員階級" customClass="PaddingLabel" customModule="shoppingApp" customModuleProvider="target">
+                    <rect key="frame" x="85" y="52" width="61.333333333333343" height="18"/>
+                    <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="本期累積消費" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9Q-91-Mc7" userLabel="累積消費title">
+                    <rect key="frame" x="25" y="85" width="409" height="20.333333333333329"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="有效期限 2025/01/01" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVg-8w-0ry" userLabel="有效期限">
+                    <rect key="frame" x="301" y="120" width="133" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" systemColor="secondaryLabelColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="/ 6000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3R-xQ-Chf" userLabel="達標金額">
+                    <rect key="frame" x="88" y="117" width="203" height="20.333333333333343"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="252" text="$2200" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xyg-qh-wbD" userLabel="已消費金額">
+                    <rect key="frame" x="25" y="115.33333333333333" width="61" height="22.999999999999986"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                    <color key="textColor" systemColor="systemRedColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="JpR-1a-j78">
+                    <rect key="frame" x="25" y="153.33333333333334" width="409" height="4"/>
+                    <color key="progressTintColor" red="1" green="0.8603730426606061" blue="0.48928488090693345" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="trackTintColor" systemColor="systemGray2Color"/>
+                </progressView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="再消費xx元可升等成銀卡會員" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vc9-zz-o2H" userLabel="升階資訊">
+                    <rect key="frame" x="25" y="167.33333333333334" width="409" height="32.666666666666657"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="JpR-1a-j78" firstAttribute="top" secondItem="xyg-qh-wbD" secondAttribute="bottom" constant="15" id="1rj-lb-GlD"/>
+                <constraint firstItem="B7n-Uv-mJp" firstAttribute="top" secondItem="FfF-z6-iWM" secondAttribute="top" constant="20" id="44b-aN-2rS"/>
+                <constraint firstItem="DCW-Zd-UZl" firstAttribute="top" secondItem="B7n-Uv-mJp" secondAttribute="top" id="6wS-Tv-UIV"/>
+                <constraint firstItem="B7n-Uv-mJp" firstAttribute="leading" secondItem="FfF-z6-iWM" secondAttribute="leading" constant="20" id="7of-UJ-Ev6"/>
+                <constraint firstItem="xyg-qh-wbD" firstAttribute="top" secondItem="f9Q-91-Mc7" secondAttribute="bottom" constant="10" id="A3R-ga-w5G"/>
+                <constraint firstItem="S79-WU-xPZ" firstAttribute="leading" secondItem="DCW-Zd-UZl" secondAttribute="leading" id="ACP-Za-4tw"/>
+                <constraint firstAttribute="bottom" secondItem="Vc9-zz-o2H" secondAttribute="bottom" constant="15" id="B6X-3D-VKF"/>
+                <constraint firstItem="JpR-1a-j78" firstAttribute="leading" secondItem="f9Q-91-Mc7" secondAttribute="leading" id="Bi8-1H-Ped"/>
+                <constraint firstItem="Vc9-zz-o2H" firstAttribute="top" secondItem="JpR-1a-j78" secondAttribute="bottom" constant="10" id="Jh5-bP-W5C"/>
+                <constraint firstItem="JpR-1a-j78" firstAttribute="trailing" secondItem="f9Q-91-Mc7" secondAttribute="trailing" id="Pyc-OB-FjZ"/>
+                <constraint firstItem="9IX-Qe-aGm" firstAttribute="leading" secondItem="DCW-Zd-UZl" secondAttribute="trailing" constant="15" id="YPB-le-p59"/>
+                <constraint firstItem="f9Q-91-Mc7" firstAttribute="trailing" secondItem="9IX-Qe-aGm" secondAttribute="trailing" id="akH-E2-4MZ"/>
+                <constraint firstItem="DCW-Zd-UZl" firstAttribute="leading" secondItem="B7n-Uv-mJp" secondAttribute="trailing" constant="15" id="bbZ-wi-rlA"/>
+                <constraint firstItem="M3R-xQ-Chf" firstAttribute="leading" secondItem="xyg-qh-wbD" secondAttribute="trailing" constant="2" id="cWy-1P-kZt"/>
+                <constraint firstItem="Vc9-zz-o2H" firstAttribute="leading" secondItem="f9Q-91-Mc7" secondAttribute="leading" id="gkF-an-Xw3"/>
+                <constraint firstAttribute="trailing" secondItem="jVg-8w-0ry" secondAttribute="trailing" constant="20" id="icB-DV-Wfq"/>
+                <constraint firstItem="jVg-8w-0ry" firstAttribute="firstBaseline" secondItem="xyg-qh-wbD" secondAttribute="firstBaseline" id="jeI-1c-QRg"/>
+                <constraint firstItem="jVg-8w-0ry" firstAttribute="leading" secondItem="M3R-xQ-Chf" secondAttribute="trailing" constant="10" id="mrk-OV-rIW"/>
+                <constraint firstItem="Vc9-zz-o2H" firstAttribute="trailing" secondItem="f9Q-91-Mc7" secondAttribute="trailing" id="nml-8G-llV"/>
+                <constraint firstItem="9IX-Qe-aGm" firstAttribute="top" secondItem="B7n-Uv-mJp" secondAttribute="top" id="nom-ia-qKV"/>
+                <constraint firstItem="xyg-qh-wbD" firstAttribute="leading" secondItem="f9Q-91-Mc7" secondAttribute="leading" id="pjl-gX-r2v"/>
+                <constraint firstItem="S79-WU-xPZ" firstAttribute="top" secondItem="DCW-Zd-UZl" secondAttribute="bottom" constant="8" id="q9x-Sh-JoH"/>
+                <constraint firstItem="M3R-xQ-Chf" firstAttribute="firstBaseline" secondItem="xyg-qh-wbD" secondAttribute="firstBaseline" id="uf5-T4-Vuv"/>
+                <constraint firstAttribute="trailing" secondItem="9IX-Qe-aGm" secondAttribute="trailing" constant="20" id="v7V-DJ-Rce"/>
+                <constraint firstItem="f9Q-91-Mc7" firstAttribute="top" secondItem="B7n-Uv-mJp" secondAttribute="bottom" constant="15" id="yme-SC-ZyL"/>
+                <constraint firstItem="f9Q-91-Mc7" firstAttribute="leading" secondItem="FfF-z6-iWM" secondAttribute="leading" constant="25" id="zGN-cR-5BJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="222.90076335877862" y="-189.08450704225353"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="barcode" catalog="system" width="128" height="94"/>
+        <image name="catPhoto" width="3024" height="4032"/>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

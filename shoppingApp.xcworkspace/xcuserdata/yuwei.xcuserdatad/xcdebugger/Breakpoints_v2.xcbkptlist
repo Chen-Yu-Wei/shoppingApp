@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5B13D744-0BAB-4874-94A1-15CAB2451DCC"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "127178B2-450F-45E1-8997-7A58EA4E338D"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "shoppingApp/Cart/CartViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "137"
+            endingLineNumber = "137"
+            landmarkName = "setObservable()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "F90C1DAB-53AF-4945-8B6F-1FC949DD0C3B"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "shoppingApp/Member/MemberQRcodeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "120"
+            endingLineNumber = "120"
+            landmarkName = "displayQRCodeImage(ciImage:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "F90C1DAB-53AF-4945-8B6F-1FC949DD0C3B - 5b92b55536e581a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shoppingApp.MemberQRcodeViewController.displayQRCodeImage(ciImage: Swift.Optional&lt;__C.CIImage&gt;) -&gt; ()"
+                  moduleName = "shoppingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuwei/Desktop/shoppingApp/shoppingApp/Member/MemberQRcodeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "312">
+               </Location>
+               <Location
+                  uuid = "F90C1DAB-53AF-4945-8B6F-1FC949DD0C3B - 5b92b55536e581a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shoppingApp.MemberQRcodeViewController.displayQRCodeImage(ciImage: Swift.Optional&lt;__C.CIImage&gt;) -&gt; ()"
+                  moduleName = "shoppingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuwei/Desktop/shoppingApp/shoppingApp/Member/MemberQRcodeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "96">
+               </Location>
+               <Location
+                  uuid = "F90C1DAB-53AF-4945-8B6F-1FC949DD0C3B - 5b92b55536e581a3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "shoppingApp.MemberQRcodeViewController.displayQRCodeImage(ciImage: Swift.Optional&lt;__C.CIImage&gt;) -&gt; ()"
+                  moduleName = "shoppingApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/yuwei/Desktop/shoppingApp/shoppingApp/Member/MemberQRcodeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "120"
+                  endingLineNumber = "120"
+                  offsetFromSymbolStart = "160">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
